@@ -1,6 +1,7 @@
 package gojieba
 
 /*
+limengqiu
 #cgo CXXFLAGS: -I./deps -DLOGGING_LEVEL=LL_WARNING -O3 -Wall
 #include <stdlib.h>
 #include "jieba.h"
