@@ -26,6 +26,7 @@ type Jieba struct {
 }
 
 func NewJieba(paths ...string) *Jieba {
+	// Chanaged limengqiu
 	dictpaths := getDictPaths(paths...)
 	dpath, hpath, upath, ipath, spath := C.CString(dictpaths[0]), C.CString(dictpaths[1]), C.CString(dictpaths[2]), C.CString(dictpaths[3]), C.CString(dictpaths[4])
 	defer C.free(unsafe.Pointer(dpath))
